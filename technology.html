@@ -19,7 +19,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="starter-code/assets/favicon-32x32.png"
+      href="./starter-code/assets/favicon-32x32.png"
     />
 
     <title>Mohammad Hijazi | Space tourism website</title>
@@ -28,13 +28,13 @@
     <script src="tab.js" defer></script>
   </head>
 
-  <body class="crew">
+  <body class="technology">
     <a class="skip-to-content" href="#main">skip to content</a>
 
     <header class="primary-header flex">
       <div>
         <img
-          src="starter-code/assets/shared/logo.svg"
+          src="./starter-code/assets/shared/logo.svg"
           alt="space tourism logo"
           class="logo"
         />
@@ -66,7 +66,7 @@
               ><span aria-hidden="true">01</span>Destination</a
             >
           </li>
-          <li class="active">
+          <li>
             <a
               href="crew.html"
               class="ff-sans-cond uppercase text-white letter-spacing-2"
@@ -74,7 +74,7 @@
               ><span aria-hidden="true">02</span>Crew</a
             >
           </li>
-          <li>
+          <li class="active">
             <a
               href="technology.html"
               class="ff-sans-cond uppercase text-white letter-spacing-2"
@@ -88,7 +88,7 @@
 
     <main id="main" class="grid-container grid-container--crew flow">
       <h1 class="numbered-title">
-        <span aria-hidden="true">02</span> Meet your crew
+        <span aria-hidden="true">03</span> Space launch 101
       </h1>
 
       <div
@@ -98,8 +98,8 @@
       >
         <button
           aria-selected="true"
-          aria-controls="commander-tab"
-          data-image="commander-image"
+          aria-controls="vehicle-tab"
+          data-image="vehicle-image"
           role="tab"
           tabindex="0"
         >
@@ -107,8 +107,8 @@
         </button>
         <button
           aria-selected="false"
-          aria-controls="mission-tab"
-          data-image="mission-image"
+          aria-controls="capsule-tab"
+          data-image="capsule-image"
           role="tab"
           tabindex="-1"
         >
@@ -116,140 +116,108 @@
         </button>
         <button
           aria-selected="false"
-          aria-controls="pilot-tab"
-          data-image="pilot-image"
+          aria-controls="spaceport-tab"
+          data-image="spaceport-image"
           role="tab"
           tabindex="-1"
         >
-          <span class="sr-only">pilot</span>
-        </button>
-        <button
-          aria-selected="false"
-          aria-controls="crew-tab"
-          data-image="crew-image"
-          role="tab"
-          tabindex="-1"
-        >
-          <span class="sr-only">crew engineer</span>
+          <span class="sr-only">spaceport</span>
         </button>
       </div>
-      <!-- Commander -->
+      <!-- vehicle -->
       <article
         class="crew-details flow"
-        id="commander-tab"
+        id="vehicle-tab"
         role="tabpanel"
         tabindex="0"
       >
-        <h2 class="ff-serif fs-600 uppercase">Commander</h2>
-        <p class="ff-serif fs-700 uppercase">Douglas Hurley</p>
+        <h2 class="ff-serif fs-600 uppercase">The terminology...</h2>
+        <p class="ff-serif fs-700 uppercase">launch vehicle</p>
 
         <p class="text-accent">
-          Douglas Gerald Hurley is an American engineer, former Marine Corps
-          pilot and former NASA astronaut. He launched into space for the third
-          time as commander of Crew Dragon Demo-2.
+          A launch vehicle or carrier rocket is a rocket-propelled vehicle used
+          to carry a payload from Earth's surface to space, usually to Earth
+          orbit or beyond. Our WEB-X carrier rocket is the most powerful in
+          operation. Standing 150 metres tall, it's quite an awe-inspiring sight
+          on the launch pad!
         </p>
       </article>
 
-      <!-- engineer -->
+      <!-- capsule -->
       <article
         hidden
         class="crew-details flow"
-        id="mission-tab"
+        id="capsule-tab"
         role="tabpanel"
         tabindex="-1"
       >
-        <h2 class="ff-serif fs-600 uppercase">Flight Engineer</h2>
-        <p class="ff-serif fs-700 uppercase">Anousheh Ansari</p>
+        <h2 class="ff-serif fs-600 uppercase">The terminology...</h2>
+        <p class="ff-serif fs-700 uppercase">Space capsule</p>
 
         <p class="text-accent">
-          Anousheh Ansari is an Iranian American engineer and co-founder of
-          Prodea Systems. Ansari was the fourth self-funded space tourist, the
-          first self-funded woman to fly to the ISS, and the first Iranian in
-          space.
+          A space capsule is an often-crewed spacecraft that uses a blunt-body
+          reentry capsule to reenter the Earth's atmosphere without wings. Our
+          capsule is where you'll spend your time during the flight. It includes
+          a space gym, cinema, and plenty of other activities to keep you
+          entertained.
         </p>
       </article>
 
-      <!-- pilot -->
+      <!-- spaceport -->
       <article
         hidden
         class="crew-details flow"
-        id="pilot-tab"
+        id="spaceport-tab"
         role="tabpanel"
         tabindex="-1"
       >
-        <h2 class="ff-serif fs-600 uppercase">Pilot</h2>
-        <p class="ff-serif fs-700 uppercase">Victor Glover</p>
+        <h2 class="ff-serif fs-600 uppercase">The terminology...</h2>
+        <p class="ff-serif fs-700 uppercase">Spaceport</p>
 
         <p class="text-accent">
-          Pilot on the first operational flight of the SpaceX Crew Dragon to the
-          International Space Station. Glover is a commander in the U.S. Navy
-          where he pilots an F/A-18.He was a crew member of Expedition 64, and
-          served as a station systems flight engineer.
+          P A spaceport or cosmodrome is a site for launching (or receiving)
+          spacecraft, by analogy to the seaport for ships or airport for
+          aircraft. Based in the famous Cape Canaveral, our spaceport is ideally
+          situated to take advantage of the Earth’s rotation for launch.
         </p>
       </article>
 
-      <!-- specialist -->
-      <article
-        hidden
-        class="crew-details flow"
-        id="crew-tab"
-        role="tabpanel"
-        tabindex="-1"
-      >
-        <h2 class="ff-serif fs-600 uppercase">Mission Specialist</h2>
-        <p class="ff-serif fs-700 uppercase">Mark Shuttleworth</p>
-
-        <p class="text-accent">
-          Mark Richard Shuttleworth is the founder and CEO of Canonical, the
-          company behind the Linux-based Ubuntu operating system. Shuttleworth
-          became the first South African to travel to space as a space tourist.
-        </p>
-      </article>
-
-      <!-- commander -->
-      <picture id="commander-image">
+      <!-- vehicle -->
+      <picture id="vehicle-image">
         <source
-          srcset="starter-code/assets/crew/image-douglas-hurley.webp"
-          type="image/webp"
+          srcset="
+            starter-code/assets/technology/image-launch-vehicle-portrait.jpg
+          "
+          type="image/jpg"
         />
         <img
-          src="starter-code/assets/crew/image-douglas-hurley.png"
+          src="starter-code/assets/technology/image-launch-vehicle-portrait.jpg"
+          alt="image-vehicle"
+        />
+      </picture>
+
+      <!-- capsule -->
+      <picture hidden id="capsule-image">
+        <source
+          srcset="
+            starter-code/assets/technology/image-space-capsule-portrait.jpg
+          "
+          type="image/jpg"
+        />
+        <img
+          src="starter-code/assets/technology/image-space-capsule-portrait.jpg"
           alt="image-douglas-hurley"
         />
       </picture>
 
-      <!-- engineer -->
-      <picture hidden id="mission-image">
+      <!-- spaceport -->
+      <picture hidden id="spaceport-image">
         <source
-          srcset="starter-code/assets/crew/image-anousheh-ansari.webp"
+          srcset="starter-code/assets/technology/image-spaceport-portrait.jpg"
           type="image/webp"
         />
         <img
-          src="starter-code/assets/crew/image-anousheh-ansari.png"
-          alt="image-douglas-hurley"
-        />
-      </picture>
-
-      <!-- pilot -->
-      <picture hidden id="pilot-image">
-        <source
-          srcset="starter-code/assets/crew/image-victor-glover.webp"
-          type="image/webp"
-        />
-        <img
-          src="starter-code/assets/crew/image-victor-glover.png"
-          alt="image-douglas-hurley"
-        />
-      </picture>
-
-      <!-- specialist -->
-      <picture hidden id="crew-image">
-        <source
-          srcset="starter-code/assets/crew/image-mark-shuttleworth.webp"
-          type="image/webp"
-        />
-        <img
-          src="starter-code/assets/crew/image-mark-shuttleworth.png"
+          src="starter-code/assets/technology/image-spaceport-portrait.jpg"
           alt="image-douglas-hurley"
         />
       </picture>
